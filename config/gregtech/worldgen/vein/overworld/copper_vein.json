@@ -1,6 +1,6 @@
 {
   "weight": 80,
-  "density": 0.2,
+  "density": 0.4,
   "max_height": 60,
   "min_height": 5,
   "vein_populator": {
@@ -21,7 +21,7 @@
         "primary": "ore:chalcopyrite"
       },
       {
-        "secondary": "ore:iron"
+        "secondary": "ore:chalcopyrite"
       },
       {
         "between": "ore:pyrite"

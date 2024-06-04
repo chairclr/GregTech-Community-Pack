@@ -1,7 +1,7 @@
 {
   "weight": 40,
-  "density": 0.25,
-  "max_height": 40,
+  "density": 0.75,
+  "max_height": 80,
   "min_height": 10,
   "vein_populator": {
     "type": "surface_rock",
@@ -21,7 +21,7 @@
         "primary": "ore:garnierite"
       },
       {
-        "secondary": "ore:nickel"
+        "secondary": "ore:garnierite"
       },
       {
         "between": "ore:cobaltite"

@@ -1,6 +1,6 @@
 {
   "weight": 40,
-  "density": 0.25,
+  "density": 0.1,
   "max_height": 20,
   "min_height": 5,
   "vein_populator": {
@@ -10,7 +10,7 @@
   "generator": {
     "type": "layered",
     "radius": [
-      14,
+      10,
       16
     ]
   },

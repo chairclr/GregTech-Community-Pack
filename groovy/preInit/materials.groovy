@@ -1,9 +1,13 @@
 import gregtech.api.unification.material.event.MaterialEvent
 import gregtech.api.unification.material.Material
+import gregtech.api.items.metaitem.*
+import static gregtech.api.unification.material.info.MaterialFlags.*;
+import static gregtech.api.unification.material.Materials.*;
 
 import net.minecraft.util.ResourceLocation
 
 import static gregtech.api.unification.material.info.MaterialFlags.*
+import classes.MetaTileEntities
 
 event_manager.listen { MaterialEvent event ->
     new Material.Builder(32000, resource('gcp', 'fluix'))
@@ -17,4 +21,12 @@ event_manager.listen { MaterialEvent event ->
     material('nether_quartz').addFlags('generate_rod', 'generate_bolt_screw')
     material('iron').addFlags('generate_dense')
     material('brass').addFlags('generate_spring')
+
+    StandardMetaItem customMetaItems = new StandardMetaItem((short)2);
+    customMetaItems.setRegistryName("meta_item_2")
+
+    Lead.addFlags("generate_round");
+    Aluminium.addFlags("generate_round");
+
+    MetaTileEntities.init()
 }

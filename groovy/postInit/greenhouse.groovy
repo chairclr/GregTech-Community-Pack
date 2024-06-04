@@ -1,6 +1,6 @@
 
 // Greenhouse
-crafting.shapedBuilder().name('greenhouse')
+/*crafting.shapedBuilder().name('greenhouse')
         .output(metaitem('gcp:greenhouse'))
         .matrix('GGG', 'CHC', 'PUP')
         .key('G', item('gregtech:transparent_casing'))
@@ -90,4 +90,4 @@ for (entry : plants) {
         .outputs(output)
         .duration(900).EUt(60).buildAndRegister()
 }
-
+*/

@@ -12,10 +12,90 @@
     "overrides": "overrides",
     "manifestVersion": 1,
     "version": "1.0",
-    "author": "GregTech Community Pack Dev Team",
+    "author": "GregTech Community Pack Dev Team + gonbler",
     "externalDeps": [],
-    "name": "GregTech Community Pack",
+    "name": "GregTech Community Pack gonbler Edition",
     "files": [
+        {
+            "projectID": 313146,
+            "fileID": 2668213,
+            "required": true
+        },
+        {
+            "projectID": 225604,
+            "fileID": 2489566,
+            "required": true
+        },
+        {
+            "projectID": 408195,
+            "fileID": 3152093,
+            "required": true
+        },
+        {
+            "projectID": 291874,
+            "fileID": 2799213,
+            "required": true
+        },
+        {
+            "projectID": 239197,
+            "fileID": 5354089,
+            "required": true
+        },
+        {
+            "projectID": 244201,
+            "fileID": 2958103,
+            "required": true
+        },
+        {
+            "projectID": 294216,
+            "fileID": 2563129,
+            "required": true
+        },
+        {
+            "projectID": 241140,
+            "fileID": 2499252,
+            "required": true
+        },
+        {
+            "projectID": 964594,
+            "fileID": 5047422,
+            "required": true
+        },
+        {
+            "projectID": 964516,
+            "fileID": 5049991,
+            "required": true
+        },
+        {
+            "projectID": 477021,
+            "fileID": 5155451,
+            "required": true
+        },
+        {
+            "projectID": 229876,
+            "fileID": 2483393,
+            "required": true
+        },
+        {
+            "projectID": 220318,
+            "fileID": 2842510,
+            "required": true
+        },
+        {
+            "projectID": 237307,
+            "fileID": 2937869,
+            "required": true
+        },
+        {
+            "projectID": 648514,
+            "fileID": 4696300,
+            "required": true
+        },
+        {
+            "projectID": 277631,
+            "fileID": 4344128,
+            "required": true
+        },
         {
             "projectID": 557549,
             "fileID": 5229422,
