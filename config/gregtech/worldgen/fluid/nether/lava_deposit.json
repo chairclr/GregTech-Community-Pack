@@ -6,9 +6,9 @@
     "max": 250
   },
   "depletion": {
-    "amount": 1,
-    "chance": 100,
-    "depleted_yield": 30
+    "amount": 5,
+    "chance": 25,
+    "depleted_yield": 100 
   },
   "fluid": "lava",
   "dimension_filter": [

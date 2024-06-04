@@ -2,13 +2,13 @@
   "weight": 20,
   "name": "Overworld Raw Oil Deposit",
   "yield": {
-    "min": 200,
-    "max": 300
+    "min": 300,
+    "max": 700
   },
   "depletion": {
-    "amount": 1,
-    "chance": 100,
-    "depleted_yield": 25
+    "amount": 3,
+    "chance": 10,
+    "depleted_yield": 325 
   },
   "fluid": "oil_medium"
 }

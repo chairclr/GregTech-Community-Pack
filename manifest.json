@@ -17,6 +17,21 @@
     "name": "GregTech Community Pack gonbler Edition",
     "files": [
         {
+            "projectID": 616190,
+            "fileID": 4630499,
+            "required": true
+        },
+        {
+            "projectID": 265917,
+            "fileID": 2951731,
+            "required": true
+        },
+        {
+            "projectID": 278406,
+            "fileID": 2481852,
+            "required": true
+        },
+        {
             "projectID": 313146,
             "fileID": 2668213,
             "required": true

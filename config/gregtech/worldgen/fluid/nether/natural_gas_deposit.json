@@ -6,9 +6,9 @@
     "max": 300
   },
   "depletion": {
-    "amount": 1,
-    "chance": 100,
-    "depleted_yield": 40
+    "amount": 5,
+    "chance": 15,
+    "depleted_yield": 100
   },
   "fluid": "natural_gas",
   "dimension_filter": [

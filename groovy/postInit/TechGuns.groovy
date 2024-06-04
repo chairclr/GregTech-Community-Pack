@@ -168,11 +168,47 @@ def name_removals = [
 	"techguns:itemshared_154_upgrade_projectile_protection_3",
 	"techguns:itemshared_149_upgrade_blast_protection_1",
 	"techguns:itemshared_152_upgrade_blast_protection_2",
-	"techguns:itemshared_155_upgrade_blast_protection_3",
+	"techguns:itemshared_155_upgrade_blast_protection_3"
 ]
 
 for (name in name_removals) {
 	crafting.remove(name);
+}
+
+def dict_removals = [
+    ["plateIron", 46],
+    ["plateCopper", 47],
+    ["plateTin", 48],
+    ["plateBronze", 49],
+    ["plateSteel", 50],
+    ["plateObsidianSteel", 51],
+    ["plateLead", 52],
+    ["plateCarbon", 53],
+    ["plateTitanium", 54],
+    ["sheetPlastic", 55],
+    ["itemRubber", 56],
+    ["ingotObsidianSteel", 84],
+    ["ingotTitanium", 85],
+    ["circuitElite", 66],
+    ["circuitBasic", 65]
+]
+
+for (pair in dict_removals) {
+    ore(pair[0]).remove(item('techguns:itemshared', pair[1]))
+    furnace.removeByInput(item('techguns:itemshared', pair[1]), false)
+
+    mods.jei.ingredient.hide(item('techguns:itemshared', pair[1]))
+}
+
+def craft_removals = [
+    item('techguns:itemshared', 66),
+    item('techguns:itemshared', 67),
+]
+
+for (it in craft_removals) { 
+    crafting.removeByInput(it, false)
+
+    mods.jei.ingredient.hide(it)
 }
 
 crafting.replaceShaped("techguns:stielgranate", item('techguns:stielgranate'), [

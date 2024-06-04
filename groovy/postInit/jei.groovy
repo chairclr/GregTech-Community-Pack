@@ -13,3 +13,4 @@ mods.jei.category.remove('techguns.oredrill')
 mods.jei.category.remove('techguns.blastfurnace')
 mods.jei.category.remove('techguns.grinder')
 mods.jei.category.remove('techguns.camobench')
+
