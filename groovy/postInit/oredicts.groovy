@@ -28,3 +28,6 @@ ore('crystalCertusQuartz').remove(item('appliedenergistics2:material'))
 // GregTech
 ore('crystalFluix').add(item('gregtech:meta_gem', 32000)) // GT Fluix Gem
 ore('itemSilicon').add(item('gregtech:meta_plate', 99)) // GT Silicon Plate
+
+
+ore('ingotPigIron').add(metaitem('ingotPigIron'))

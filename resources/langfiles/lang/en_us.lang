@@ -9,3 +9,7 @@ gcp.machine.weapons_factory.zpm.name=Elite Weapons Factory III
 gcp.machine.weapons_factory.uv.name=Ultimate Weapons Factory
 
 recipemap.weapons_factory.name=Weapons Factory
+
+# Metaitems
+metaitem.ingotPigIron.name=Pig Iron
+

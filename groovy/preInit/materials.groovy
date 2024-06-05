@@ -25,6 +25,8 @@ event_manager.listen { MaterialEvent event ->
     StandardMetaItem customMetaItems = new StandardMetaItem((short)2);
     customMetaItems.setRegistryName("meta_item_2")
 
+    customMetaItems.addItem(200, "ingotPigIron")
+
     Lead.addFlags("generate_round");
     Aluminium.addFlags("generate_round");
 
