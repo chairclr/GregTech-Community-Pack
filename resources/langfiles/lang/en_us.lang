@@ -12,4 +12,5 @@ recipemap.weapons_factory.name=Weapons Factory
 
 # Metaitems
 metaitem.ingotPigIron.name=Pig Iron
+metaitem.ironSmallChunk.name=Iron Chunk
 

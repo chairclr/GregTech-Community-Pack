@@ -159,10 +159,14 @@ def oresToDouble = [
 for (def oreName : oresToDouble) {
     for (def oreType : ore(oreName)) {
         if (furnace.removeByInput(oreType, false)) {
-            furnace.add(oreType * 4, item('minecraft:iron_ingot'), 0.5)
+            furnace.add(oreType, metaitem('ironSmallChunk'), 0.5)
         }
     }
 }
+
+crafting.addShapeless("gcp:iron_ingot", item('minecraft:iron_ingot'), [
+    metaitem('ironSmallChunk'), metaitem('ironSmallChunk'), metaitem('ironSmallChunk'), metaitem('ironSmallChunk')
+])
 
 furnace.add(metaitem('dustBrownLimonite'), metaitem('dustBandedIron'))
 furnace.add(metaitem('dustYellowLimonite'), metaitem('dustBandedIron'))
