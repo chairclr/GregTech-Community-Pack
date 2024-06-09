@@ -17,7 +17,7 @@ event_manager.listen { MaterialEvent event ->
             .components(material('certus_quartz'), material('nether_quartz'), material('redstone'))
             .build()
 
-    new Material.Builder(32001, resource('gcp', 'mud'))
+    new Material.Builder(32011, resource('gcp', 'mud'))
                 .liquid()
                 .color(0x211b14)
                 .build()

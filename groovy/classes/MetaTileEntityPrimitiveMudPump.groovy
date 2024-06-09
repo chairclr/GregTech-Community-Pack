@@ -21,12 +21,12 @@ import gregtech.common.blocks.BlockMetalCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.metatileentities.MetaTileEntities
 import net.minecraft.block.state.IBlockState
-import net.minecraft.client.resources.I18n
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.util.ResourceLocation
 import net.minecraft.world.biome.Biome
 import net.minecraftforge.common.BiomeDictionary
 import net.minecraftforge.fluids.FluidTank
+import net.minecraftforge.fluids.FluidStack
 import net.minecraftforge.fluids.IFluidTank
 import gregtech.common.blocks.wood.BlockGregPlanks
 
@@ -57,7 +57,7 @@ public class MetaTileEntityPrimitiveMudPump extends MultiblockControllerBase imp
             if (biomeModifier == 0) {
                 biomeModifier = getAmount()
             } else if (biomeModifier > 0) {
-                mudTank.fill(fluid("mud").getFluid(getFluidProduction()), true)
+                mudTank.fill(new FluidStack(fluid("mud").getFluid(), getFluidProduction()), true)
             }
         }
     }
@@ -94,6 +94,7 @@ public class MetaTileEntityPrimitiveMudPump extends MultiblockControllerBase imp
     @Override
     protected void formStructure(PatternMatchContext context) {
         super.formStructure(context)
+        initializeAbilities()
     }
 
     @Override
@@ -138,11 +139,13 @@ public class MetaTileEntityPrimitiveMudPump extends MultiblockControllerBase imp
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public ICubeRenderer getBaseTexture(IMultiblockPart sourcePart) {
         return Textures.STEAM_CASING_BRONZE
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     protected ICubeRenderer getFrontOverlay() {
         return Textures.PRIMITIVE_PUMP_OVERLAY
     }
@@ -154,8 +157,9 @@ public class MetaTileEntityPrimitiveMudPump extends MultiblockControllerBase imp
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
     public String[] getDescription() {
-        return new String[]{I18n.format("gcp.multiblock.primitive_mud_pump.description")}
+        return new String[]{net.minecraft.client.resources.I18n.format("gcp.multiblock.primitive_mud_pump.description")}
     }
 
     @Override
