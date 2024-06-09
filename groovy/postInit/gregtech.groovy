@@ -44,3 +44,12 @@ recipemap('assembler').recipeBuilder()
     .inputs(metaitem('pipeNormalItemBrass'))
     .outputs(metaitem('cover.item.voiding'))
     .duration(100).EUt(30).buildAndRegister();
+
+mods.gregtech.centrifuge.recipeBuilder()
+        .fluidInputs(fluid('mud') * 1000)
+        .chancedOutput(item('minecraft:clay'), 2500, 250)
+        .chancedOutput(item('minecraft:sand'), 2500, 250)
+        .chancedOutput(item('minecraft:gravel'), 2500, 250)
+        .duration(20)
+        .EUt(30)
+        .buildAndRegister()

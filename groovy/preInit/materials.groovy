@@ -17,19 +17,24 @@ event_manager.listen { MaterialEvent event ->
             .components(material('certus_quartz'), material('nether_quartz'), material('redstone'))
             .build()
 
+    new Material.Builder(32001, resource('gcp', 'mud'))
+                .liquid()
+                .color(0x211b14)
+                .build()
+
     material('certus_quartz').addFlags('generate_rod', 'generate_bolt_screw')
     material('nether_quartz').addFlags('generate_rod', 'generate_bolt_screw')
     material('iron').addFlags('generate_dense')
     material('brass').addFlags('generate_spring')
 
-    StandardMetaItem customMetaItems = new StandardMetaItem((short)2);
+    StandardMetaItem customMetaItems = new StandardMetaItem((short)2)
     customMetaItems.setRegistryName("meta_item_2")
 
     customMetaItems.addItem(200, "ingotPigIron")
     customMetaItems.addItem(210, "ironSmallChunk")
 
-    Lead.addFlags("generate_round");
-    Aluminium.addFlags("generate_round");
+    Lead.addFlags("generate_round")
+    Aluminium.addFlags("generate_round")
 
     MetaTileEntities.init()
 }

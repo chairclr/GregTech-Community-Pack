@@ -36,6 +36,9 @@ public class MetaTileEntities {
     public static void init() {
         WEAPONS_FACTORY = new SimpleMachineMetaTileEntity[GTValues.UV];
         registerSimpleMTE(WEAPONS_FACTORY, GTValues.UV, 15026, "weapons_factory", WEAPONS_FACTORY_RECIPES, Textures.ASSEMBLER_OVERLAY, true, GTUtility.defaultTankSizeFunction)
+
+        registerMetaTileEntity(32005, new MetaTileEntityPrimitiveMudPump(itemId("primitive_mud_pump")))
+        
     }
 
     private static void registerSimpleMTE(SimpleMachineMetaTileEntity[] machines, int maxTier, int startId, String name, RecipeMap<?> map, ICubeRenderer texture, boolean hasFrontFacing, Function<Integer, Integer> tankScalingFunction) {

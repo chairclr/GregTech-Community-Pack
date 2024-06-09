@@ -1,8 +1,8 @@
-import gregtech.common.metatileentities.MetaTileEntities
-
 import classes.globals
 import classes.MetaTileEntityGreenhouse
 import classes.MetaTileEntities
+import classes.MetaTileEntityPrimitiveMudPump
+import static gregtech.common.metatileentities.MetaTileEntities.registerMetaTileEntity
 
 if (isReloading()) return
 
@@ -88,4 +88,15 @@ for (def i = 1; i < 9; i++) {
 			[tieredCables[i], circuits[i], tieredCables[i]]
 	])
 }
+
 // MetaTileEntities.registerMetaTileEntity(32000, new MetaTileEntityGreenhouse(new ResourceLocation("gcp", "greenhouse")))
+
+crafting.addShaped("gcp:primitive_mud_pump", metaitem('gcp:primitive_mud_pump'), [
+		[metaitem('ringBronze'), metaitem('pipeNormalFluidTreatedWood'), metaitem('screwBronze')],
+		[metaitem('rotorBronze'), item('gregtech:steam_casing'), ore('craftingToolScrewdriver')],
+		[item('minecraft:stone_slab', 4), metaitem('pipeLargeFluidWood'), item('minecraft:stone_slab', 4)]
+])
+
+
+
+

@@ -146,14 +146,14 @@ for (blastable in blastables) {
 }
 
 def oresToDouble = [
-    "ore*Pyrite",
-    "ore*YellowLimonite",
-    "ore*BrownLimonite",
-    "ore*BandedIron",
-    "ore*Magnetite",
-    "ore*Iron",
-    "ore*GraniticMineralSand",
-    "ore*BasalticMineralSand",
+    "*Pyrite",
+    "*YellowLimonite",
+    "*BrownLimonite",
+    "*BandedIron",
+    "*Magnetite",
+    "*Iron",
+    "*GraniticMineralSand",
+    "*BasalticMineralSand",
 ]
 
 for (def oreName : oresToDouble) {

@@ -14,3 +14,8 @@ recipemap.weapons_factory.name=Weapons Factory
 metaitem.ingotPigIron.name=Pig Iron
 metaitem.ironSmallChunk.name=Iron Chunk
 
+# Mud Pump
+gcp.material.mud=Mud
+gcp.machine.primitive_mud_pump.name=Primitive Mud Pump
+gcp.machine.primitive_mud_pump.tooltip=Works only in River biomes between Y=64 and Y=80
+gcp.multiblock.primitive_mud_pump.description=The Primitive Mud Pump is a Steam Era multiblock that collects mud once per second, but only if it is in a river biome, and when the controller is between Y = 64 and Y = 80 (Inclusive). It can use a Pump, ULV, or LV Output Hatch.
